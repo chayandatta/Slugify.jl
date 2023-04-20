@@ -1,4 +1,4 @@
-name = "slugify"
+name = "Slugify"
 uuid = "6a57dadc-0402-4d39-bf46-19b28e03609d"
 authors = ["Chayan Datta"]
 version = "1.0.0-DEV"
