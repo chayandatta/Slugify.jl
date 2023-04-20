@@ -10,7 +10,11 @@ Slugify.jl is a package for the Julia programming language that provides functio
 ```julia
 julia> using Slugify
 
-julia> slugify("foo buzz")
+julia> slugify("foo bar")
+"foo-bar"
+
+# if you prefer something other than '-' as separator
+julia> slugify("foo buzz", "_")
 "foo_buzz"
 
 julia> 

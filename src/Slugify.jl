@@ -2,7 +2,7 @@ module Slugify
 
 export slugify
 
-replacement = "_"
+replacement = "-"
 
 function slugify(str::AbstractString) :: String
     split_str = split(str)
