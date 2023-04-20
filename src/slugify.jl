@@ -1,6 +1,6 @@
 module Slugify
 
-export Slugify
+export slugify
 
 replacement = "_"
 

@@ -1,4 +1,4 @@
-using Slugify: slugify
+using Slugify
 using Test
 
 @testset "slugify.jl" begin
