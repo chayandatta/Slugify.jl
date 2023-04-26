@@ -17,7 +17,8 @@ function slugify(str::AbstractString, replacement::String) :: String
 end
 
 function replaceUnicode(str::String) :: String
-    char_map_dict = JSON.parsefile("./config/char_map.json")
+    char_map_path = joinpath(@__DIR__, "..", "config", "char_map.json")
+    char_map_dict = JSON.parsefile(char_map_path)
     str = reduce((s, kv) -> replace(s, kv[1] => kv[2]), char_map_dict, init=str)
     return str
 end
