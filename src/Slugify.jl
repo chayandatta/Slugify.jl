@@ -5,15 +5,15 @@ export slugify
 replacement = "-"
 
 function slugify(str::AbstractString) :: String
-    split_str = split(str)
+    split_str = split(replaceUnicode(str))
     slugified_str = join(split_str, replacement)
-    return replaceUnicode(slugified_str)
+    return slugified_str
 end
 
 function slugify(str::AbstractString, replacement::String) :: String
-    split_str = split(str)
+    split_str = split(replaceUnicode(str))
     slugified_str = join(split_str, replacement)
-    return replaceUnicode(slugified_str)
+    return slugified_str
 end
 
 function replaceUnicode(str::String) :: String
