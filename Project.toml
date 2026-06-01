@@ -1,7 +1,7 @@
 name = "Slugify"
 uuid = "6a57dadc-0402-4d39-bf46-19b28e03609d"
 authors = ["Chayan Datta"]
-version = "1.0.1"
+version = "1.0.3"
 
 [deps]
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
